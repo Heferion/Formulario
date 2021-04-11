@@ -3,13 +3,14 @@
 
 <head>
     <link href="css/estilos.css" rel="stylesheet" />
+    <script type="text/javascript" src="JavaScript/funciones.js"></script>
     <title>Formulario Programacion 3</title>
 
 </head>
 
 <body>
     <div class="cabecera">
-        <h1 id="titulo">Formulario Programacion 3</h1>
+        <h1 id="titulo">Formulario Programacion 3</h1><br>
     </div>
 
     <form>
@@ -39,7 +40,7 @@
 
                 <div class="seleccion">
                     <p id="seleccionDato">Seleccione el dato correspondiente</p>
-                    <table class="tablaGenero">
+                    <table class="tablaSeleccion">
                         <tr>
                             <td>
                                 <h3>Genero</h3>
@@ -81,52 +82,67 @@
                                 <input id="viudo" type="radio" name="estadoCivil" value="viudo">
                             </td>
                         </tr>
-                        <tr >
+                        <tr>
                             <br>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td>
                                 <h4 class="seleccionPais">Seleccione pais de origen
-                                <select id="tablaPais" name="pais" >
-                                    <option>Australia</option>
-                                    <option>Bolivia</option>
-                                    <option>Colombia</option>
-                                    <option>Dinamarca</option>
-                                    <option>Egipto</option>
-                                    <option>Francia</option>
-                                    <option>Guyana</option>
-                                    <option>Honduras</option>
-                                    <option>Islandia</option>
-                                    <option>Nepal</option>
-                                    <option>Omán</option>
-                                    <option>Perú</option>
-                                    <option>Qatar</option>
-                                    <option>Rumanía</option>
-                                    <option>Suecia</option>
-                                    <option>Tailandia</option>
-                                    <option>Uruguay</option>
-                                    <option>Vietnam</option>
-                                    <option>Wallis y Futuna</option>
-                                    <option>Yemen</option>
-                                    <option>Zimbabwe</option>
-                                </select></h4>
+                                    <select id="tablaPais" name="pais">
+                                        <option>Australia</option>
+                                        <option>Bolivia</option>
+                                        <option>Colombia</option>
+                                        <option>Dinamarca</option>
+                                        <option>Egipto</option>
+                                        <option>Francia</option>
+                                        <option>Guyana</option>
+                                        <option>Honduras</option>
+                                        <option>Islandia</option>
+                                        <option>Nepal</option>
+                                        <option>Omán</option>
+                                        <option>Perú</option>
+                                        <option>Qatar</option>
+                                        <option>Rumanía</option>
+                                        <option>Suecia</option>
+                                        <option>Tailandia</option>
+                                        <option>Uruguay</option>
+                                        <option>Vietnam</option>
+                                        <option>Wallis y Futuna</option>
+                                        <option>Yemen</option>
+                                        <option>Zimbabwe</option>
+                                    </select>
+                                </h4>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p id="fechaNacimiento">Fecha de Nacimiento</p>
-                                <input type="date" name="fecha">
+                                <p id="fechaNacimiento">Fecha de Nacimiento <br>
+                                    <input id="seleccionFecha" type="date" name="fecha">
+                                </p>
                             </td>
                         </tr>
+
                     </table>
+                    <fieldset>
+                        <legend>Ingrese una breve descripcion suya</legend>
+                        <textarea id="descripcion"name="texto" rows="7" cols="80" placeholder="Escriba algo"></textarea>
+                    </fieldset>
                 </div>
-
-
-                <br><br>
-                <input type="submit" value="enviar">
             </form>
+            <div class="contenedor2">
+                <h4 id="tituloUsuario">Ingrese los datos de usuario</h4>
+                <fieldset>
+                    <legend>Datos de Usuario</legend>
+                    <p>Usuario <br> <input type="text" name="usuario"></p>
 
+                    <p>Contraseña <br> <input type="password" name="Contraseña" minlength="8"></p>
+
+                </fieldset>
+            </div>
+
+            <br><br>
+                <input id="botonEnviar"type="submit" value="enviar" size="20">
         </div>
     </form>
 

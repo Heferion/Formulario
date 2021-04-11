@@ -55,7 +55,7 @@
     border: solid rgb(6, 124, 99);
     text-align: center;
 }
-.tablaGenero{
+.tablaSeleccion{
     font-size: 20px;
     
 }
@@ -65,4 +65,36 @@
 #tablaPais{
     font-size: 18px;
     background-color: rgb(229, 226, 226);
+}
+#fechaNacimiento{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    color:olive;
+}
+
+#seleccionFecha{
+    color: royalblue;
+}
+#descripcion{
+    margin-left: 20%;
+}
+
+.contenedor2{
+    font-size: 20px;
+    font-family: serif;
+    background-color: blanchedalmond;
+}
+
+#tituloUsuario{
+    text-align: center;
+    color: rgb(54, 55, 90);
+}
+
+#botonEnviar{
+    
+    margin-left: 40%;
+    font-size: 20px;
+    padding: 15px 32px;
+    text-transform: uppercase;
 }
