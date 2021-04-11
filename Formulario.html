@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/estilos.css" rel="stylesheet" />
+    <title>Formulario Programacion 3</title>
+
+</head>
+
+<body>
+    <div class="cabecera">
+        <h1 id="titulo">Formulario Programacion 3</h1>
+    </div>
+
+    <form>
+        <div class="contenedor1">
+            <div class="cabecera">
+                <h2 id="dIngreso">
+                    Ingresar datos de usuario
+                </h2>
+            </div>
+            <form>
+                <p class="textoFormulario">Nombres: <input type="text" name="Ingresar Nombre" class="casillaDatos"
+                        size="50"></p>
+
+                <p class="textoFormulario">Primer Apellido: <input type="text" name="Ingresar PrApellido"
+                        class="casillaDatos" size="50"></p>
+
+                <p class="textoFormulario">Segundo Apellido: <input type="text" name="Ingresar SgApellido"
+                        class="casillaDatos" size="50"></p>
+
+                <label id="textoTelefono" for="telefono">Numero Telefonico:</label><br>
+
+                <input type="tel" id="telefono" name="telefono" maxlength="10" minlength="5" pattern="[0-9]{}">
+                
+                
+                <br><br>
+                <input type="submit" value="enviar">
+            </form>
+
+        </div>
+    </form>
+
+</body>
+
+
+</html>
