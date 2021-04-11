@@ -30,4 +30,39 @@
 
 #textoTelefono{
     font-size: 18px;
+    color: slateblue;
+}
+
+#telefono{
+    background-color: rgb(250, 175, 167);
+    font-style: italic;
+}
+#textoCorreo{
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: bolder;
+}
+#correo{
+    font-size: 18px;
+}
+.seleccion{
+    background-color: rgb(240, 218, 240);
+}
+#seleccionDato{
+    font-size: 220%;
+    font-family: monospace;
+    text-align: left;
+    border: solid rgb(6, 124, 99);
+    text-align: center;
+}
+.tablaGenero{
+    font-size: 20px;
+    
+}
+.seleccionPais{
+    border: 2px solid rgb(107, 40, 40);
+}
+#tablaPais{
+    font-size: 18px;
+    background-color: rgb(229, 226, 226);
 }
