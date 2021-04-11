@@ -78,6 +78,7 @@
 }
 #descripcion{
     margin-left: 20%;
+   
 }
 
 .contenedor2{
@@ -91,7 +92,7 @@
     color: rgb(54, 55, 90);
 }
 
-#botonEnviar{
+.btnEnviar{
     
     margin-left: 40%;
     font-size: 20px;

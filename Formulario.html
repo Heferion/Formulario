@@ -13,14 +13,14 @@
         <h1 id="titulo">Formulario Programacion 3</h1><br>
     </div>
 
-    <form>
+    <form name="formularioRegistro">
         <div class="contenedor1">
             <div class="cabecera">
                 <h2 id="dIngreso">
                     Ingresar datos de usuario
                 </h2>
             </div>
-            <form>
+            
                 <p class="textoFormulario">Nombres: <input type="text" name="ingresarNombre" class="casillaDatos"
                         size="50"></p>
 
@@ -30,11 +30,11 @@
                 <p class="textoFormulario">Segundo Apellido: <input type="text" name="ingresarSgApellido"
                         class="casillaDatos" size="50"></p>
 
-                <label id="textoTelefono" for="telefono">Numero Telefonico:</label><br>
+                <label id="textoTelefono" for="telefono">Número Telefónico:</label><br>
 
                 <input type="tel" id="telefono" name="telefono" placeholder="0123456789" pattern="[0-9]{10}"> <br><br>
 
-                <label id="textoCorreo" for="correo">Correo Electronico:</label><br>
+                <label id="textoCorreo" for="correo">Correo Electrónico:</label><br>
 
                 <input type="email" id="correo" name="correoElectronico" placeholder="Ejemplo@domino.com" size="70">
 
@@ -43,7 +43,7 @@
                     <table class="tablaSeleccion">
                         <tr>
                             <td>
-                                <h3>Genero</h3>
+                                <h3>Género</h3>
                             </td>
                         </tr>
                         <tr>
@@ -75,7 +75,7 @@
                             <td><label for="casado">Casado (a)</label>
                                 <input id="casado" type="radio" name="estadoCivil" value="casado">
                             </td>
-                            <td><label for="divosiado">Divosiado (a)</label>
+                            <td><label for="divosiado">Divorciado (a)</label>
                                 <input id="divosiado" type="radio" name="estadoCivil" value="divosiado">
                             </td>
                             <td><label for="viudo">Viudo (a)</label>
@@ -88,7 +88,7 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <h4 class="seleccionPais">Seleccione pais de origen
+                                <h4 class="seleccionPais">Seleccione País de Origen
                                     <select id="tablaPais" name="pais">
                                         <option>Australia</option>
                                         <option>Bolivia</option>
@@ -118,31 +118,31 @@
                         <tr>
                             <td>
                                 <p id="fechaNacimiento">Fecha de Nacimiento <br>
-                                    <input id="seleccionFecha" type="date" name="fecha">
+                                    <input id="seleccionFecha" type="date" name="fechaNacimiento">
                                 </p>
                             </td>
                         </tr>
 
                     </table>
                     <fieldset>
-                        <legend>Ingrese una breve descripcion suya</legend>
-                        <textarea id="descripcion"name="texto" rows="7" cols="80" placeholder="Escriba algo"></textarea>
+                        <legend>Ingrese una breve descripción suya</legend>
+                        <textarea id="descripcion"name="textoDescripcion" rows="7" cols="80" placeholder="Realice una Descripción"></textarea>
                     </fieldset>
                 </div>
-            </form>
+
             <div class="contenedor2">
                 <h4 id="tituloUsuario">Ingrese los datos de usuario</h4>
                 <fieldset>
                     <legend>Datos de Usuario</legend>
-                    <p>Usuario <br> <input type="text" name="usuario"></p>
+                    <p>Usuario <br> <input type="text" name="usuario" minlength="3"></p>
 
-                    <p>Contraseña <br> <input type="password" name="Contraseña" minlength="8"></p>
+                    <p>Contraseña <br> <input type="password" name="contraseña" minlength="8" maxlength="12"></p>
 
                 </fieldset>
             </div>
 
             <br><br>
-                <input id="botonEnviar"type="submit" value="enviar" size="20">
+                <input class="btnEnviar" type="submit" value="enviar" size="20" onclick="EnviarFormulario()">
         </div>
     </form>
 
